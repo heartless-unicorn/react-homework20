@@ -1,0 +1,44 @@
+.Nav {
+  padding: 50px;
+  width: 60%;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+}
+.profile-photo p {
+  text-align: center;
+}
+.profile-photo img {
+  width: 200px;
+  border-radius: 150%;
+  border: 3px solid white;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  padding-top: 40px;
+}
+.info-nav {
+  display: flex;
+  flex-direction: column;
+}
+.info-social {
+  display: flex;
+  justify-content: space-around;
+}
+.info-social p {
+  padding-right: 20px;
+}
+.navigation {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 53px;
+}
+.navigation a {
+  padding-right: 40px;
+  text-decoration: none;
+  color: black;
+}
