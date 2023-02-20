@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./styles/Nav.css";
 
 export default function Nav() {
+  let activeStyle = {
+    textDecoration: "underline",
+    color: "#5e5e5e",
+  };
+
   return (
     <div className="Nav">
       <div className="profile">
@@ -13,7 +18,7 @@ export default function Nav() {
           <p>Bug the retriever</p>
         </div>
         <div className="profile-info">
-          <p>@Bug_TheGoodBoy</p>
+          <p className="user-name">@Bug_TheGoodBoy</p>
           <div className="info-nav">
             <div className="info-social">
               <p>
@@ -29,10 +34,31 @@ export default function Nav() {
               </p>
             </div>
             <div className="navigation">
-              <Link to="/">Main</Link>
-              <Link to="/feed">Feed</Link>
-              <Link to="/photos"> Photos</Link>
-              <Link to="/contacts">Contacts</Link>
+              <NavLink
+                to="/"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                Main
+              </NavLink>
+              <NavLink
+                to="/feed"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                Feed
+              </NavLink>
+              <NavLink
+                to="/photos"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                {" "}
+                Photos
+              </NavLink>
+              <NavLink
+                to="/contacts"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                Contacts
+              </NavLink>
             </div>
             <div></div>
           </div>

@@ -1,0 +1,36 @@
+.Post {
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.acount-info {
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  vertical-align: text-bottom;
+}
+.user {
+  font-size: 13px;
+  margin-top: 0;
+  color: #5e5e5e;
+}
+.name {
+  margin-bottom: 0;
+}
+.icon {
+  width: 60px;
+  border-radius: 100%;
+}
+.describtion {
+  font-size: 25px;
+}
+.img-box {
+  text-align: center;
+}
+.img-box img {
+  width: 600px;
+  margin: 10px;
+}

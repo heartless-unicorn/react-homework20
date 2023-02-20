@@ -9,3 +9,9 @@
   border: 3px solid white;
   border-radius: 20px;
 }
+.picture-box {
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
