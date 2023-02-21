@@ -1,0 +1,25 @@
+.header-user {
+  width: 100%;
+  display: flex;
+  margin-left: 50px;
+  padding: 50px;
+  background-color: #e6eefa;
+  border-radius: 20px;
+  justify-content: space-around;
+  position: sticky;
+  top: 20px;
+}
+.header-user img {
+  width: 300px;
+}
+.first-name {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.username {
+  margin-top: 0px;
+  color: grey;
+}
+.phonebox svg {
+  padding-right: 13px;
+}

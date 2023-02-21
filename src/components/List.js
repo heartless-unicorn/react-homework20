@@ -51,7 +51,7 @@ let posts = [
   {
     name: "Leya",
     icon: "https://st3.depositphotos.com/5924166/14610/v/600/depositphotos_146108245-stock-illustration-maltese-dog-animal-low-poly.jpg",
-    nickname: "@PronsesLeya",
+    nickname: "@PrinsessLeya",
     content:
       "Haircut from amazing @groom-and-trim, she outdone herself yet again",
     image:

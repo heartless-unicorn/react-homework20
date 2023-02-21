@@ -1,0 +1,30 @@
+.Contact {
+  border: 2px solid white;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 15px;
+  border-radius: 20px;
+  background-color: white;
+  transition: 1s ease-in-out;
+}
+.Contact:hover {
+  box-shadow: -1px -1px 8px 3px #887d8cd7;
+}
+.Contact a {
+  text-decoration: none;
+  color: black;
+}
+.Contact img {
+  padding-left: 10px;
+  width: 70px;
+  border-radius: 100%;
+  align-self: center;
+}
+.profile-contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile-contact p {
+  font-weight: 600;
+  font-size: 18px;
+}

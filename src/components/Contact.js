@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
+import "./styles/Contact.css";
 
 function Contact(props) {
   return (
     <div className="Contact">
-      <div>
-        <p>
-          {props.data.firstName} {props.data.lastName}{" "}
-        </p>
-        <p className="number">{props.data.phone}</p>
-      </div>
-      <div>
-        <Link to={props.data.firstName}>Click</Link>
-      </div>
+      <Link to={props.data.username}>
+        <div className="profile-contact">
+          <div>
+            <p>{props.data.firstName}</p>
+            <p className="number">{props.data.phone}</p>
+          </div>
+          <img src={props.data.icon} alt="Dog" />
+        </div>
+      </Link>
     </div>
   );
 }
