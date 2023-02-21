@@ -24,7 +24,6 @@ const picsDescription = [
 export default function MainPage() {
   useEffect(() => {
     const likefromStorage = localStorage.getItem("likeAmount0");
-
     if (JSON.parse(likefromStorage) === null) {
       profilePics.map((value, index) => {
         let randomLikes = Math.round(Math.random() * 100);

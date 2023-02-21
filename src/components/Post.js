@@ -21,7 +21,7 @@ export default function Post(response) {
         <img src={response.data.image} alt="Post" className="img-fluid w-50" />
       </div>
       <p className="describtion">{response.data.content}</p>
-      <Menu index={response.index} />
+      <Menu index={response.index + 10} />
     </div>
   );
 }

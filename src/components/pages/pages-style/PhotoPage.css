@@ -1,0 +1,10 @@
+.PhotoPage {
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.PhotoPage img {
+  width: 400px;
+  border-radius: 15px;
+  padding: 5px;
+}

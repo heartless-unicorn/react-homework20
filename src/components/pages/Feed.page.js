@@ -6,11 +6,13 @@ import "./pages-style/FeedPage.css";
 export default function FeedPage() {
   useEffect(() => {
     const likefromStorage = localStorage.getItem("likeAmount10");
-
     if (JSON.parse(likefromStorage) === null) {
       posts.map((value, index) => {
         let randomLikes = Math.round(Math.random() * 100);
-        localStorage.setItem(`likeAmount${index}`, JSON.stringify(randomLikes));
+        localStorage.setItem(
+          `likeAmount${index + 10}`,
+          JSON.stringify(randomLikes)
+        );
       });
     }
   }, []);

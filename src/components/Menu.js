@@ -8,19 +8,18 @@ import {
 import { useEffect, useState } from "react";
 export default function Menu(props) {
   let isLiked = localStorage.getItem(`isLiked${props.index}`);
-
   const likeAmount = localStorage.getItem(`likeAmount${props.index}`);
-  const [like, Liked] = useState(!isLiked);
-  let [likes, countLike] = useState(+likeAmount);
+  const [like, Liked] = useState(JSON.parse(isLiked));
+  let [likes, countLike] = useState(JSON.parse(likeAmount));
 
   useEffect(() => {
     if (JSON.parse(isLiked) === null) {
-      localStorage.setItem(`isLiked${props.index}`, false);
+      localStorage.setItem(`isLiked${props.index}`, JSON.stringify(false));
     }
   });
   useEffect(() => {
-    localStorage.setItem(`isLiked${props.index}`, like);
-    localStorage.setItem(`likeAmount${props.index}`, likes);
+    localStorage.setItem(`isLiked${props.index}`, JSON.stringify(like));
+    localStorage.setItem(`likeAmount${props.index}`, JSON.stringify(likes));
   }, [like, likes, props.index]);
   const handleLike = () => {
     Liked((current) => !current);
